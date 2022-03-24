@@ -1,0 +1,17 @@
+[
+    {
+    라이브러리: "pm2"
+    설명: "node.js 무중단 서비스"
+    명령어: [
+        "npm install pm2 -g",
+        "pm2 start main.js --watch --ignore-watch="data/*" --no-daemon",
+        "pm2 log",
+        "pm2 list",
+        "pm2 kill"
+    ]},
+    {
+    라이브러리: "sanitize-html"
+    설명: "HTML 태그를 걸러내는 보안 서비스"
+    명령어: "npm install -S sanitize-html"
+    }
+]
